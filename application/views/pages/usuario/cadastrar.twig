@@ -1,0 +1,39 @@
+{% extends "templates/base_cadastrar.twig" %}
+{% set titulo ="Cadastrar Usuário" %}
+{% block content %}
+    {{ form_open('usuario/salvar') }}
+        <div class="form-group">
+            <label>Nome Completo</label>
+            <input name="nome_completo" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Setor</label>
+            <select name="setor" class="form-control">
+            {% for row in setor %}
+                <option value="{{ row.ID_SETOR }}">{{ row.DESCRICAO }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Ramal</label>
+            <input name="ramal" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Tipo de Usuário</label>
+            <select name="tipo_usuario" class="form-control">
+            {% for row in tipo_usuario %}
+                <option value="{{ row.ID_TIPO_USUARIO }}">{{ row.DESCRICAO }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Autenticação</label>
+            <input name="usuario" class="form-control" placeholder="Usuário">
+        </div>
+        <div class="form-group">
+            <input name="senha" class="form-control" placeholder="Senha" type="password">
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Ok </button>
+        <button type="reset" class="btn btn-primary"><i class="fa fa-times"></i> Cancelar </button>
+    {{ form_close() }}
+{% endblock %}                                    
