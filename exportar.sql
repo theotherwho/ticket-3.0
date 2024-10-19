@@ -105,9 +105,9 @@ Insert into HR.ORDEM_SERVICO (ID_ORDEM_SERVICO,ID_CATEGORIA,ID_ULT_STATUS_OS) va
 REM INSERTING into HR.SETOR
 SET DEFINE OFF;
 Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('2','Recursos Humanos');
-Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('3','JurÌdico');
-Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('4','ManutenÁ„o');
-Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('1','Inform·tica');
+Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('3','Jur√≠dico');
+Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('4','Manuten√ß√£o');
+Insert into HR.SETOR (ID_SETOR,DESCRICAO) values ('1','Inform√°tica');
 REM INSERTING into HR.STATUS
 SET DEFINE OFF;
 Insert into HR.STATUS (ID_STATUS,DESCRICAO) values ('1','Nova');
@@ -117,14 +117,14 @@ Insert into HR.STATUS (ID_STATUS,DESCRICAO) values ('4','Encerrada');
 Insert into HR.STATUS (ID_STATUS,DESCRICAO) values ('5','Cancelada');
 REM INSERTING into HR.STATUS_OS
 SET DEFINE OFF;
-Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','1','N„o liga',to_date('19/11/19','DD/MM/RR'),'3');
+Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','1','N√£o liga',to_date('19/11/19','DD/MM/RR'),'3');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','1','Sem acesso internet',to_date('19/11/19','DD/MM/RR'),'4');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','2','Quero novo',to_date('19/11/19','DD/MM/RR'),'5');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('4','3','1','Testando mouse',to_date('20/11/19','DD/MM/RR'),'1');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('5','2','1',null,to_date('20/11/19','DD/MM/RR'),'1');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('6','2','1',null,to_date('20/11/19','DD/MM/RR'),'1');
-Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','1','N„o entra',to_date('19/11/19','DD/MM/RR'),'2');
-Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('2','2','1','Deslocando atÈ o local',to_date('19/11/19','DD/MM/RR'),'2');
+Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','1','N√£o entra',to_date('19/11/19','DD/MM/RR'),'2');
+Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('2','2','1','Deslocando at√© o local',to_date('19/11/19','DD/MM/RR'),'2');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('1','1','1','Travou',to_date('19/11/19','DD/MM/RR'),'1');
 Insert into HR.STATUS_OS (ID_STATUS_OS,ID_STATUS,ID_RESPONSAVEL,DESCRICAO,DATA_ANDAMENTO,ID_ORDEM_SERVICO) values ('3','3','1','Aguardando fornecedor',to_date('19/11/19','DD/MM/RR'),'5');
 REM INSERTING into HR.TIPO_USUARIO
@@ -134,9 +134,9 @@ Insert into HR.TIPO_USUARIO (ID_TIPO_USUARIO,DESCRICAO) values ('2','Solicitante
 Insert into HR.TIPO_USUARIO (ID_TIPO_USUARIO,DESCRICAO) values ('3','Atendente');
 REM INSERTING into HR.USUARIO
 SET DEFINE OFF;
-Insert into HR.USUARIO (ID_USUARIO,NOME_COMPLETO,ID_SETOR,LOGIN,SENHA,RAMAL,ID_TIPO_PAPEL,DATA_CADASTRO) values ('1','Pablo Olivera','1','pablo','123456','3614','3',to_date('07/11/19','DD/MM/RR'));
+Insert into HR.USUARIO (ID_USUARIO,NOME_COMPLETO,ID_SETOR,LOGIN,SENHA,RAMAL,ID_TIPO_PAPEL,DATA_CADASTRO) values ('1','Cristiano','1','cristiano','123456','3614','3',to_date('07/11/19','DD/MM/RR'));
 Insert into HR.USUARIO (ID_USUARIO,NOME_COMPLETO,ID_SETOR,LOGIN,SENHA,RAMAL,ID_TIPO_PAPEL,DATA_CADASTRO) values ('0','Administrador do Sistema','1','admin','123456',null,'1',to_date('21/11/19','DD/MM/RR'));
-Insert into HR.USUARIO (ID_USUARIO,NOME_COMPLETO,ID_SETOR,LOGIN,SENHA,RAMAL,ID_TIPO_PAPEL,DATA_CADASTRO) values ('2','M·rcia Wingert','3','nenewin','123456','0298','2',to_date('21/11/19','DD/MM/RR'));
+Insert into HR.USUARIO (ID_USUARIO,NOME_COMPLETO,ID_SETOR,LOGIN,SENHA,RAMAL,ID_TIPO_PAPEL,DATA_CADASTRO) values ('2','M√°rcia Wingert','3','nenewin','123456','0298','2',to_date('21/11/19','DD/MM/RR'));
 --------------------------------------------------------
 --  DDL for Index CATEGORIA_PK
 --------------------------------------------------------
